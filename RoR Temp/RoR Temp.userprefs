@@ -1,0 +1,28 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\World Interaction\Elevator.cs">
+    <Files>
+      <File FileName="Assets\Scripts\EnemyGeneral\EnemyChasing.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ControllerState2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CharacterController2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character1\Player1Abilities.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character1\Character1Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyGeneral\EnemyHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character1\PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\World Interaction\Ladder.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character1\BulletManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ControllerPhsyicsVolume2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ControllerParameters2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character1\Bullet2Manager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyGeneral\EnemyAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Character1\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\World Interaction\JumpablePlats.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\World Interaction\Elevator.cs" Line="27" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
