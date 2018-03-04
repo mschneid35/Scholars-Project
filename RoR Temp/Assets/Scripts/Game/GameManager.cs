@@ -41,10 +41,6 @@ public class GameManager : MonoBehaviour {
 			AbilityTxts[2].text = "" + (int) (Player1Abilities.Ability3CD - Time.time + 1);
 		}
 
-		if (Player1Abilities.Ability4CD - Time.time > -1) {
-			AbilityTxts[3].text = "" + (int) (Player1Abilities.Ability4CD - Time.time + 1);
-		}
-
 		HpText.text = PlayerHealth.HP + "/" + maxHP;
 
 	//	Debug.Log (score);

@@ -16,14 +16,10 @@ public class Player1Abilities : MonoBehaviour {
 	static public float Ability3CD = 0;
 	public Text Ability3Txt;
 
-	public float Ability4Cooldown = 5f;
-	static public float Ability4CD = 0;
-	public Text Ability4Txt;
-
 	public GameObject FireTransform;
     public GameObject WhipTransform;
-	public GameObject Bullet1;
-	public GameObject Bullet2;
+	public GameObject Bullet;
+	public GameObject Whip;
 
 	private Rigidbody2D PlayerRigidBody;
 
@@ -44,35 +40,25 @@ public class Player1Abilities : MonoBehaviour {
             return;
 
 		if(Input.GetButtonDown("Ability1") && Ability1CD < Time.time) {
-			Character1Shoot ();
+            StartCoroutine("shoot");
 			Ability1CD = Time.time + Ability1Cooldown;
 		}
 		else if(Input.GetButtonDown("Ability2") && Ability2CD < Time.time) {
-			Character1KnockBack ();
+			whipAbility ();
 			Ability2CD = Time.time + Ability2Cooldown;
 		}
 		else if(Input.GetButtonDown("Ability3") && Ability3CD < Time.time) {
-			Character1Dash ();
+			dash ();
 			Ability3CD = Time.time + Ability3Cooldown;
-		} /*
-		else if(Input.GetButtonDown("Ability4") && Ability4CD < Time.time) {
-			Character1Supp ();
-			Ability4CD = Time.time + Ability4Cooldown;
-		}*/
-	}
-
-	void Character1Shoot () {
-
-		StartCoroutine ("Ability1");
-
+		}
 	}
 		
-	void Character1KnockBack () {
-		GameObject whip = Instantiate (Bullet2, WhipTransform.transform.position, FireTransform.transform.rotation);
+	void whipAbility () {
+		GameObject whip = Instantiate (Whip, WhipTransform.transform.position, FireTransform.transform.rotation);
         whip.transform.parent = transform;
 	}
 
-	void Character1Dash () {
+	void dash () {
 		if(!PlayerMovement.LookR)
 			PlayerRigidBody.AddForce(Vector2.left * 500);
 		else if(PlayerMovement.LookR)
@@ -84,17 +70,8 @@ public class Player1Abilities : MonoBehaviour {
 		//gameObject.GetComponent<PlayerMovement>().
 	}
 
-	IEnumerator Ability1 () {
-		Instantiate (Bullet1, FireTransform.transform.position, FireTransform.transform.rotation);
+	IEnumerator shoot () {
+		Instantiate (Bullet, FireTransform.transform.position, FireTransform.transform.rotation);
         yield return new WaitForSeconds(.1f);
     }
-
-	/*IEnumerator Ability4 () {
-
-		for (int i = 0; i < 6; i++) {
-			Instantiate (Bullet1, FireTransform.transform.position, FireTransform.transform.rotation);
-
-			yield return new WaitForSeconds (.1f);
-		}
-	}*/
 }
